@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Verse | Quiz Automotriz (10 Preguntas)</title>
+ 
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+ 
+    <!-- Estilos (incluye los del quiz) -->
+       <link rel="stylesheet" href="../Estilos/quiz.css">
+</head>
+ 
+<body>
+ 
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <a href="index.html" class="logo">CAR <span>VERSE</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html#historia">Historia</a></li>
+                <li><a href="index.html#categorias">Categorías</a></li>
+                <li><a href="index.html#catalogo">Catálogo 3D</a></li>
+                <li><a href="quiz.html" class="btn-game-link" aria-current="page">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <!-- HERO -->
+    <div class="hero hero-quiz">
+        <h1>Quiz Automotriz</h1>
+    </div>
+ 
+    <!-- CONTENEDOR PRINCIPAL DEL QUIZ -->
+    <main class="quiz-wrap">
+        <h2>🏆 Pon a prueba tus conocimientos de Car Verse</h2>
+        <p class="intro-p">
+            Este quiz consta de <strong>10 preguntas</strong> basadas en la información de la plataforma:
+            nuestra historia, las 5 categorías técnicas y las especificaciones del catálogo.
+        </p>
+ 
+        <!-- BARRA DE PROGRESO CON CARRITO -->
+        <div class="quiz-progress-container">
+            <div class="quiz-progress-info">
+                <span id="questionCount">Pregunta 1 de 10</span>
+                <span id="scoreText">Puntos: 0</span>
+            </div>
+ 
+            <div class="progress-track" id="progressTrack" role="progressbar" aria-label="Progreso del quiz"
+                aria-valuemin="0" aria-valuemax="10" aria-valuenow="0">
+                <div class="progress-road">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+ 
+                    <!-- Carrito (SVG mirando a la derecha) -->
+                    <div class="progress-car" id="progressCar" aria-hidden="true">
+                        <svg viewBox="0 0 64 30" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 21 L5 15 Q7 13 14 12 L25 5 Q27 4 31 4 L43 4 Q47 4 49 8 L53 12 L59 13 Q63 14 63 18 L63 21 Z"
+                                fill="#ffc93c" />
+                            <path d="M27 7 L40 7 Q42 7 43 9 L45 12 L22 12 Z" fill="#120c2e" opacity="0.85" />
+                            <circle cx="17" cy="22" r="6" fill="#120c2e" />
+                            <circle cx="17" cy="22" r="2.5" fill="#b9b3d9" />
+                            <circle cx="49" cy="22" r="6" fill="#120c2e" />
+                            <circle cx="49" cy="22" r="2.5" fill="#b9b3d9" />
+                        </svg>
+                    </div>
+                </div>
+                <span class="progress-flag" aria-hidden="true">🏁</span>
+            </div>
+        </div>
+ 
+        <!-- TARJETA DE PREGUNTA -->
+        <div class="quiz-card" id="quizCard">
+            <h3 class="quiz-question" id="quizQuestion">Cargando pregunta...</h3>
+            <div class="quiz-options" id="quizOptions">
+                <!-- Opciones generadas con JS -->
+            </div>
+ 
+            <!-- Explicación tras responder -->
+            <p class="quiz-feedback" id="quizFeedback" hidden></p>
+            <button class="btn-quiz" id="btnNext" type="button" hidden>Siguiente pregunta</button>
+        </div>
+ 
+        <!-- RESULTADOS -->
+        <div class="quiz-results" id="quizResults" hidden>
+            <h3>🏁 ¡Quiz completado!</h3>
+            <p class="results-score" id="finalScoreText">Obtuviste 0 de 10 puntos</p>
+            <p class="results-feedback" id="resultsFeedback"></p>
+            <button class="btn-quiz" id="btnRestart" type="button">Intentar de nuevo</button>
+        </div>
+    </main>
+ 
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Car Verse — Proyecto Académico de 1 "B" en Bachillerato Técnico en Desarrollo de Software.</p>
+    </footer>
+ 
+    <script src="quiz.js"></script>
+</body>
+</html>

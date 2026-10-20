@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Verse | Universo Automovilistico</title>
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Visor 3D Universal de Google -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+    <!-- Estilos CSS -->
+       <link rel="stylesheet" href="../Estilos/style.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <a href="#inicio" class="logo">CAR <span>VERSE</span></a>
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#catalogo">Catálogo 3D</a></li>
+                <li><a href="quiz.html" class="btn-game-link"> Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ENCABEZADO PRINCIPAL -->
+    <div class="hero" id="inicio">
+        <h1>Enciclopedia Automotriz</h1>
+    </div>
+
+    <!-- SECCIÓN INTRODUCCIÓN GENERAL -->
+    <div class="intro-section">
+        <h2>🏁 Bienvenidos al Universo del Automovilismo</h2>
+        <p class="intro-p">
+            Bienvenido a Car Verse, una plataforma interactiva de ingeniería e
+            historia automotriz diseñada para apasionados del motor, estudiantes y entusiastas de la mecánica. Este
+            espacio nace con el propósito de rendir homenaje a las máquinas que revolucionaron la movilidad global,
+            desde las primeras obras maestras de la era del vapor hasta los hiperdeportivos modernos propulsados por
+            complejos sistemas híbridos y aerodinámica activa.
+        </p>
+        <p class="intro-p">
+            A lo largo de las décadas, el automóvil dejó de ser un simple medio de transporte para convertirse en una
+            expresión pura de arte, velocidad y evolución tecnológica. En esta
+            plataforma no solo encontrarás datos históricos, sino que podrás examinar en detalle la arquitectura
+            mecánica, los tipos de motores, la tracción y el reparto de pesos que diferencian a cada vehículo icónico.
+        </p>
+        <p class="intro-p">
+            Para ofrecerte una experiencia inmersiva e interactiva, ponemos a tu disposición un
+            Catálogo 3D en tiempo real. Aquí podrás rotar en 360 grados cada modelo,
+            inspeccionar su chasis y carrocería desde cualquier ángulo, consultar fichas técnicas detalladas escritas
+            bajo estándares del periodismo automotriz profesional y guardar tus autos preferidos en tu propio
+            Garaje Personalizado.
+        </p>
+        <p class="intro-p">
+            Te invitamos a desplazarte hacia abajo para iniciar este viaje: descubre los grandes hitos en nuestra línea
+            del tiempo, explora las 5 categorías clave de la ingeniería y sumérgete en el catálogo interactivo.
+            ¡Siente la pasión por el motor y comienza a explorar!
+        </p>
+    </div>
+
+    <!-- 1. SECCIÓN HISTORIA -->
+    <section id="historia">
+        <div class="section-header">
+            <h2>Evolución Histórica</h2>
+            <p>Hitos principales en el desarrollo del automóvil moderno.</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>1886 — El Nacimiento</h3>
+                    <p>Karl Benz patenta el Benz Patent-Motorwagen, considerado el primer automóvil impulsado por un
+                        motor de combustión interna.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>1908 — Producción en Masa</h3>
+                    <p>Henry Ford introduce el Model T y la línea de ensamblaje móvil, democratizando el transporte en
+                        todo el mundo.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>1960s — Era Muscle Car & Gran Turismo</h3>
+                    <p>Surgimiento de íconos con motores V8 de gran cilindrada y superdeportivos aerodinámicos en
+                        América y Europa.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>1990s — Era Dorado Tuner & JDM</h3>
+                    <p>Japón revoluciona la industria con motores turboalimentados avanzados y plataformas de tracción
+                        total (ATTESA, 2JZ, RB26).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. SECCIÓN CATEGORÍAS -->
+    <section id="categorias">
+        <div class="section-header">
+            <h2>Categorías Técnicas</h2>
+            <p>Los 5 segmentos fundamentales de la ingeniería del automóvil.</p>
+        </div>
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="icon">🏎️</div>
+                <h3>Deportivos</h3>
+                <p>Enfocados en maniobrabilidad, chasis rígidos y respuesta en altas revoluciones.</p>
+            </div>
+            <div class="category-card">
+                <div class="icon">🔥</div>
+                <h3>Clásicos</h3>
+                <p>Hitos históricos que definieron épocas mediante elegancia y mecánica pura.</p>
+            </div>
+            <div class="category-card">
+                <div class="icon">💨</div>
+                <h3>Drifting</h3>
+                <p>Vehículos de tracción trasera (RWD) preparados para sobreviraje y derrape controlado.</p>
+            </div>
+            <div class="category-card">
+                <div class="icon">🏁</div>
+                <h3>Fórmula 1</h3>
+                <p>La máxima categoría: aerodinámica avanzada, efecto suelo y motores híbridos.</p>
+            </div>
+            <div class="category-card">
+                <div class="icon">🚀</div>
+                <h3>Hypercars</h3>
+                <p>La cúspide del rendimiento (+1000 HP), materiales compuestos y velocidades extremas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN CATÁLOGO 3D -->
+    <section id="catalogo">
+        <div class="section-header">
+            <h2>Catálogo Interactivo 3D</h2>
+            <p>Selecciona un vehículo para interactuar con su visor tridimensional y consultar su ficha técnica.</p>
+        </div>
+
+        <div class="catalog-controls">
+            <div class="search-bar">
+                <input type="text" id="searchInput"
+                    placeholder="Buscar por modelo, marca o motor (ej. Supra, V8, Turbo)...">
+            </div>
+            <div class="filter-buttons">
+                <button class="btn-filter active" data-category="all">Todos</button>
+                <button class="btn-filter" data-category="deportivos">Deportivos</button>
+                <button class="btn-filter" data-category="clasicos">Clásicos</button>
+                <button class="btn-filter" data-category="drift">Drifting</button>
+                <button class="btn-filter" data-category="f1">Fórmula 1</button>
+                <button class="btn-filter" data-category="hypercar">Hypercars</button>
+            </div>
+        </div>
+
+        <div class="cars-grid" id="carsGrid"></div>
+    </section>
+
+    <!-- MODAL DE FICHA TÉCNICA Y VISOR 3D -->
+    <div class="modal" id="carModal">
+        <div class="modal-body">
+            <button class="modal-close" id="modalClose">&times;</button>
+
+            <!-- CONTENEDOR DEL MODELO 3D (Entre el botón cerrar y el título) -->
+            <div id="modal3dContainer" class="modal-3d-box"></div>
+
+            <h2 class="modal-title" id="modalTitle">Nombre del Auto</h2>
+            <div class="modal-subtitle" id="modalSubtitle">Especificación del Motor</div>
+            <p class="modal-desc" id="modalDesc">Descripción completa...</p>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Car Verse — Proyecto Académico de 1 "B" en bachillerato tecnico en desarrollo de software . </p>
+    </footer>
+
+    <!-- Lógica JavaScript externa -->
+    <script src="java.js"></script>
+</body>
+</html>
